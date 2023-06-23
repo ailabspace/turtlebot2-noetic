@@ -19,8 +19,8 @@
   - [Simulation](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#simulation)
   - [Physical robot](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#physical-robot)
     - [Testing with Kobuki packages](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#test-with-kobuki-packages-not-configured-with-ros-navigation-stack)
-    - [Auto docking]()
-    - [Test Astra camera]()
+    - [Auto docking](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#automatic-docking)
+    - [Test Astra camera](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#test-astra-camera)
     - [Testing with Turtlebot package and ROS Navigation stack](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#test-with-turtlebot-package-and-ros-navigation-stack)
 9. [References and Resources](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#references-and-resources)
 
