@@ -8,6 +8,7 @@ Perhaps the easiest and yet fun thing to do with a mobile robot is to be able to
 ## Teleop with keyboard
 
 The robot can be conveniently operated if you have a wireless keyboard, or you work on a remote PC on ROS multimachines environment.
+
 - In the case of ROS multimachines environment, nodes that access a specific hardware (e.g. Kobuki, Astra camera, keyboard) should be running on the PC where the hardware is attached to. 
 
 ### Telepresence
@@ -15,9 +16,9 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
 - Run each command in a new terminal
 
   - Bringup (in case of ROS multimachines environment, run on the PC where the Kobuki is attached, i.e. the Turtlebot2)
-``` bash
-roslaunch turtlebot_bringup minimal.launch
-```
+  ``` bash
+  roslaunch turtlebot_bringup minimal.launch
+  ```
 
   - Use `rqt_image_view` to select the image topic to view
 
