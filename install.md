@@ -2,7 +2,28 @@
 
 - This note has been written when working on the Turtlebot PC (e.g. laptop, Intel NUC). The Turtlebot PC was tethered, i.e with monitor and keyboard/mouse attached. The movement of the robot was restricted during the testing.
 - If you plan to use ROS with multiple machines, you will need the same software system on both Turtlebot (local) PC and remote PC(s). Follow the steps below for both PCs unless specifically mentioned. You shall complete the Turtlebot PC first.
-  
+
+## Table of Content
+
+1. [Download and Install Ubuntu](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#1-download-and-install-ubuntu)
+2. [Install ROS](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#2-install-ros)
+3. [Install Dependent ROS/non-ROS Packages](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#3-install-dependent-rosnon-ros-packages)
+4. [Install Dependent Python Packages](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#4-install-dependent-python-packages)
+5. [Download Catkin Sources](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#5-download-catkin-sources)
+6. [Compile Catkin Projects](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#6-compile-catkin-projects)
+7. [Setup Devices and udev Rules](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#7-setup-devices-and-udev-rules)
+  - [Kobuki base](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#kobuki-base)
+  - [Astra camera](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#astra-camera)
+  - [LDS01 Lidar](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#lds01-lidar-not-tested)
+8. [Testing Turtlebot2](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#8-testing-turtlebot2)
+  - [Simulation](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#simulation)
+  - [Physical robot](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#physical-robot)
+    - [Testing with Kobuki packages](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#test-with-kobuki-packages-not-configured-with-ros-navigation-stack)
+    - [Auto docking]()
+    - [Test Astra camera]()
+    - [Testing with Turtlebot package and ROS Navigation stack](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#test-with-turtlebot-package-and-ros-navigation-stack)
+9. [References and Resources](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md#references-and-resources)
+
 ## 1. Download and Install Ubuntu
 
 - Download the proper Ubuntu 20.04 LTS Desktop image for your PC from the links below.
