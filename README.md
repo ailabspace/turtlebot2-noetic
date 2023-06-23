@@ -9,7 +9,7 @@ This repo contains notes on our process of setting up Turtlebot2 software on ROS
   - pip 20.0.2
   - Compute: Intel NUC, Mobile base: Kobuki, 3D Sensor: Astra
 
-Table of Content
+## Table of Content
 
 1. [Installation of Initial Turtlebot2 Software on ROS Noetic](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md)
 
