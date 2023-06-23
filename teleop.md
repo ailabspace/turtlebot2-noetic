@@ -18,6 +18,7 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
 ``` bash
 roslaunch turtlebot_bringup minimal.launch
 ```
+
   - Use `rqt_image_view` to select the image topic to view
 
 ``` bash
