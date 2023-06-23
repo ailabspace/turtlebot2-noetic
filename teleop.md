@@ -21,40 +21,39 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
   ```
 
   - Use `rqt_image_view` to select the image topic to view
-
-``` bash
-rosrun rqt_image_view rqt_image_view
-```
+  ``` bash
+  rosrun rqt_image_view rqt_image_view
+  ```
 
   - Teleop (in case of ROS multimachines environment, run on the PC where the keyboard is attached, e.g. the remote PC)
-``` bash
-roslaunch turtlebot_teleop keyboard_teleop.launch
-```
+  ``` bash
+  roslaunch turtlebot_teleop keyboard_teleop.launch
+  ```
 
 ### Mapping
 
 - Run each command in a new terminal
 
   - Bringup (in case of ROS multimachines environment, run on the PC where the Kobuki is attached, i.e. the Turtlebot2)
-``` bash
-roslaunch turtlebot_bringup minimal.launch
-```
+  ``` bash
+  roslaunch turtlebot_bringup minimal.launch
+  ```
 
   - Teleop (in case of ROS multimachines environment, run on the PC where the keyboard is attached, e.g. the remote PC)
-``` bash
-roslaunch turtlebot_teleop keyboard_teleop.launch
-```
+  ``` bash
+  roslaunch turtlebot_teleop keyboard_teleop.launch
+  ```
 
   - SLAM (in case of ROS multimachines environment, run on the PC where the Astra camera is attached, i.e. the Turtlebot2; this launch file starts the Astra node)
-``` bash
-roslaunch turtlebot_navigation gmapping_demo.launch
-```
+  ``` bash
+  roslaunch turtlebot_navigation gmapping_demo.launch
+  ```
 
   - Visualization (in case of ROS multimachines environment, this can be run on a more powerful remote PC where you have a display)
     - Use teleop to move the robot to see the SLAM in action
-``` bash
-roslaunch turtlebot_rviz_launchers view_navigation.launch
-```
+  ``` bash
+  roslaunch turtlebot_rviz_launchers view_navigation.launch
+  ```
 
 ## Teleop with joystick
 
