@@ -392,7 +392,7 @@ rosrun image_view image_view image:=/camera/rgb/image_raw
 rosrun image_view image_view image:=/camera/depth/image
 ```
 
-    - alternatively, use `rqt_image_view` to conveniently select the image topic to view
+    - alternatively, use `rqt_image_view` to conveniently select the image topic to view.
 
 ``` bash
 rosrun rqt_image_view rqt_image_view
