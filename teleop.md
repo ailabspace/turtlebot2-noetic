@@ -1,4 +1,4 @@
-# Teleop the Turtlebot2 (Keyboard and PS Controllers)
+# Teleop the Turtlebot2 with a Keyboard and PS Controller
 
 Perhaps the easiest and yet fun thing to do with a mobile robot is to be able to tele-operate it. If you have set up ROS multimachine, you can teleop the mobile robot while viewing its camera giving you a basic telepresence.
 - The most conveniently available teleop controller is probably the PC keyboard. The keyboard may be attached (ideally wireless) to the Turtlebot PC, or a remote PC (in case of ROS multimachine setup).
