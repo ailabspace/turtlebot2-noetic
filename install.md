@@ -65,7 +65,7 @@ sudo apt install -y python-is-python3 python3-pip
 pip install numpy catkin_pkg empy pyem rospkg rospy defusedxml pyqt5
 ```
   
-## 5. Download catkin sources
+## 5. Download Catkin Sources
 
 - Change to your catkin workspace `src` folder. Create the folder if you don't have one.
 
@@ -130,7 +130,7 @@ git clone --branch release/0.62-noetic https://github.com/stonier/ecl_core.git
 git clone --branch release/0.60-noetic https://github.com/stonier/ecl_navigation.git 
 ```
 
-## 6. Compile catkin projects
+## 6. Compile Catkin Projects
 
 - You may repeat `rosdep ...` again if there were errors. The errors below during `rosdep` did not go away, however did not seem to cause any issue.
 
@@ -162,7 +162,7 @@ catkin_make
 source ~/.bashrc
 ```
 
-## 7. Setup devices and udev rules
+## 7. Setup Devices and udev Rules
 
 - This step is only required on Turtlebot where you will directly access the devices. You don't need to perform these steps on the remote PC if you don't plan to connect the devices to the remote PC.
 - Suggest to restart the PC after setup all relevant devices
@@ -352,6 +352,7 @@ roslaunch rqt_robot_steering
 ```
 ![rqt_robot_steering](img/rqt_robot_steering.png)
 
+#### Automatic Docking
 
 - Automatic Docking
   - Ref: http://wiki.ros.org/kobuki/Tutorials/Automatic%20Docking
@@ -370,6 +371,8 @@ roslaunch kobuki_auto_docking minimal.launch --screen
 ``` bash
 roslaunch kobuki_auto_docking activate.launch --screen    
 ```
+
+#### Test Astra camera
 
 - Astra camera
   - You can view the camera images
