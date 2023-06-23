@@ -12,5 +12,7 @@ This repo contains notes on our process of setting up Turtlebot2 software on ROS
 ## Table of Content
 
 1. [Installation of Initial Turtlebot2 Software on ROS Noetic](https://github.com/ailabspace/turtlebot2-noetic/blob/main/install.md)
+2. [Teleop the Turtlebot2 with Keyboard or PS Controller](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md)
+
 
 
