@@ -243,4 +243,7 @@ If the IP address of your Turtlebot is dynamic, it is convenient to know the IP 
 
 - **Pending issues**
 
-  We have not been able to start roslaunch for `gmapping` and `ps3_teleop`. For `robot_upstart`, the problem is probably the connection to the devices (Astra camera and PS controller). We have also tried to use a bash script to perform the `roslaunch` using the "Startup Applications", however `roslaunch` would not run from there. 
+We have not been able to start roslaunch for `gmapping` and `ps3_teleop`.
+
+- For `robot_upstart`, the problem is probably the connection to the devices (Astra camera and PS controller).
+- We have also tried to use a bash script to perform the `roslaunch` using the "Startup Applications", however `roslaunch` would not run from there. 
