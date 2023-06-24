@@ -8,6 +8,7 @@ This repo contains notes on our process of setting up Turtlebot2 software on ROS
   - Python 3.8.10
   - pip 20.0.2
   - Compute: Intel NUC, Mobile base: Kobuki, 3D Sensor: Astra
+  - Remote PC: Lenovo X230, 4GB RAM
 
 ## Table of Content
 
