@@ -220,39 +220,32 @@ sudo chmod a+rw /dev/input/js0
   ```
 
   - Discover the PS3 controller MAC address:
-
-  ``` yaml
-  [bluetooth]#devices
- ```
-
+    ``` yaml
+    [bluetooth]#devices
+    ```
   - Trust the controller:
-
-  ``` yaml
- [bluetooth]#trust device_mac_address
-  ```
+    ``` yaml
+    [bluetooth]#trust device_mac_address
+    ```
 
   - Disconnect the USB cable from the controller. The controller should be paired and displayed in `bluetoothctl`. If the controller does not appear in `bluetoothctl`, press the PS button. When paired, you should see a device connected to the Bluetooth of the PC.
 
   - To exit `bluetoothctl`, enter `quit`.
-
-  ``` yaml
-  [bluetooth]#quit
-  ```
+    ``` yaml
+    [bluetooth]#quit
+    ```
 
   - To turn off the controller, press and hold the PS button for 10-12 seconds.
   - Press the PS button to use the controller again. It should turn on and automatically pair over the Bluetooth.
-
-![bluetoothctl ps3](img/bluetoothctl.png)
+    ![bluetoothctl ps3](img/bluetoothctl.png)
 
   - In case of PS4 controller, it is detected as `Wireless Controller`.
-
-![bluetoothctl ps4](img/bluetoothctl_ps4.png)
+    ![bluetoothctl ps4](img/bluetoothctl_ps4.png)
 
   - Check that the controller has been registered as a joystick
-
-  ``` bash
-  ls /dev/input/js*
-  ```
+    ``` bash
+    ls /dev/input/js*
+    ```
 
   - You can test the controls with `jstest` or `jstest-gtk`.
 
