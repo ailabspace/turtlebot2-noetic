@@ -9,7 +9,7 @@ In this note, we setup the machines to operate the Turtlebot in ROS mutliple mac
 - Enable auto login for the user on the Turtlebot machine
   - This will allow your Turtlebot to boot in and login to the user profile automatically. This would have been done if you enable it during installation of Ubuntu.
   - Search for "Users" in your applications. Click "Unlock" to edit. Enable automatic login.
-    ![Automatic login](img/user_automatic_login.png)
+  ![Automatic login](img/user_automatic_login.png)
 
 ## Read Out IP Address
 
