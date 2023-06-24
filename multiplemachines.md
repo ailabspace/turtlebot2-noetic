@@ -184,7 +184,7 @@ If the IP address of your Turtlebot is dynamic, it is convenient to know the IP 
   
 - For nodes that access the hardware (sensors and actuators), they should be run on the robot. For examples, `turtlebot_bringup` and `kobuki_auto_dock` access the Kobuki base, the `turtlebot_navigation` and `astra_launch` access the sensor (Astra camera). Nodes that do interaction, processing and/or visualization can be run on a more powerful PC, e.g. `turtlebot_rviz_launchers`, if they are not directly accessing the robot's hardware.
 
-## Automate Robot Bringup (in progress)
+## Automate Robot ROS Launch (in progress)
 
 - Auto bringup Turtlebot
   - Ref:
