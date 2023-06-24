@@ -59,7 +59,7 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
 
 ### Setting up joystick
 
-#### Generic joystick driver
+#### Install generic joystick driver
 
 This shall be installed on the machine where the joystick will be connected.
 
@@ -87,7 +87,7 @@ sudo apt install ros-noetic-joy
   sudo apt install ros-noetic-joy
   ```
 
-#### Install joystick test program.
+#### Install joystick test program
 
 This shall be installed on the machine where the joystick will be connected.
 
