@@ -61,7 +61,7 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
 
 #### Generic joystick driver
 
-- Make sure that the ROS joystick driver is installed. You can check with rospack list.
+- Make sure that the ROS joystick driver is installed. You can check with `rospack list`. You should see the `joy` package.
 
 ``` bash
 rospack list | grep joy
@@ -80,10 +80,10 @@ sudo apt install ros-noetic-joy
   - If you are getting `joy_node` not found error in the later steps, remove the `joy` package and install it again.
   - In this note we use the generic joystick driver and so we can use the same `ps3_teleop.launch` launch file to teleop the Turtlebot with either the PS3 or PS4 controller.
 
-``` bash
-sudo apt remove ros-noetic-joy
-sudo apt install ros-noetic-joy
-```
+  ``` bash
+  sudo apt remove ros-noetic-joy
+  sudo apt install ros-noetic-joy
+  ```
 
 #### Install joystick test program.
   
@@ -108,15 +108,15 @@ ls /dev/input/js*
 
   - You can see which axis/button number each control stick/button belongs to. This will help in mapping the correct axis/button for in the joystick program.
 
-``` bash
-jstest /dev/input/js0
-```
+  ``` bash
+  jstest /dev/input/js0
+  ```
 
-or (GUI)
+  or (GUI)
 
-``` bash
-jstest-gtk
-```
+  ``` bash
+  jstest-gtk
+  ```
 
 ![jstest_gtk](img/jstest_gtk.png)
 
@@ -131,59 +131,59 @@ sudo chmod a+rw /dev/input/js0
 - Teleop Turtlebot with the (wired) controller
   - Run the following two commands in two separate terminals.
 
-``` bash
-roslaunch turtlebot_bringup minimal.launch
-```
+  ``` bash
+  roslaunch turtlebot_bringup minimal.launch
+  ```
 
-``` bash
-rosluanch turtlebot_teleop ps3_teleop.launch
-```
+  ``` bash
+  rosluanch turtlebot_teleop ps3_teleop.launch
+  ```
 
   - Use the left stick to control the robot while holding the PS button. The default `turtlebot_joy` node detects the PS button and will only move the robot if the PS button is held down. This is probably for safety reason in case the controller does not have a perfect zero readings.
 
   - If you find the default speed too fast, you can slow down the robot by editing a parameter in `ps3_teleop.launch`.
 
-``` bash
-roscd ~/catkin_ws/turtlebot_teleop/launch
-nano ps3_teleop.launch
-```
+  ``` bash
+  roscd ~/catkin_ws/turtlebot_teleop/launch
+  nano ps3_teleop.launch
+  ```
 
     - Edit the `scale_linear` parameter to a smaller number.
 
-```yaml
+    ```yaml
     <param name="scale_linear" value="0.2"/>
-```
+    ```
     
   - To avoid having to hold the PS button while controlling the robot, you can disable "deadman button" in the code.
 
-``` bash
-roscd ~/catkin_ws/turtlebot_teleop/src
-sudo nano turtlebot_joy.cpp
-```
+  ``` bash
+  roscd ~/catkin_ws/turtlebot_teleop/src
+  sudo nano turtlebot_joy.cpp
+  ```
 
     - Edit in `joyCallback` function, 
 
-```cpp
-  deadman_pressed_ = true; //joy->buttons[deadman_axis_];
-```
+    ```cpp
+    deadman_pressed_ = true; //joy->buttons[deadman_axis_];
+    ```
 
     - Re-make the `turtlebot_teleop` package
 
-``` bash
-cd ~/catkin_ws
-catkin_make --pkg turtlebot_teleop --force-cmake
-```
+    ``` bash
+    cd ~/catkin_ws
+    catkin_make --pkg turtlebot_teleop --force-cmake
+    ```
 
   - Test run again.
     - Run the two commands below on two separate terminals.
 
-``` bash
-roslaunch turtlebot_bringup minimal.launch
-```
+  ``` bash
+  roslaunch turtlebot_bringup minimal.launch
+  ```
 
-``` bash
-roslaunch turtlebot_teleop ps3_teleop.launch
-```
+  ``` bash
+  roslaunch turtlebot_teleop ps3_teleop.launch
+  ```
 
 #### Set up PS3 or PS4 controller over Bluetooth (wireless)
 
@@ -192,52 +192,52 @@ roslaunch turtlebot_teleop ps3_teleop.launch
   - Disconnect the PS controller from USB.
   - Start bluetoothctl:
 
-``` bash
-bluetoothctl
-```
+  ``` bash
+  bluetoothctl
+  ```
 
   - Enable the agent and set it as default:
 
-``` yaml
-[bluetooth]#agent on
-[bluetooth]#default-agent
-```
+  ``` yaml
+  [bluetooth]#agent on
+  [bluetooth]#default-agent
+  ```
 
   - Power on the Bluetooth controller of the computer, and set it as discoverable and pairable:
 
-``` yaml
-[bluetooth]#power on
-[bluetooth]#discoverable on
-[bluetooth]#pairable on
-```
+  ``` yaml
+  [bluetooth]#power on
+  [bluetooth]#discoverable on
+  [bluetooth]#pairable on
+  ```
 
   - Connect the PS controller to the computer using a USB cable and press the PS button (if it is not detected by `bluetoothctl`).
 
   - Allow the service authorization request:
 
-``` yaml
-[agent]Authorize service service_uuid (yes/no): yes
-```
+  ``` yaml
+  [agent]Authorize service service_uuid (yes/no): yes
+  ```
 
   - Discover the PS3 controller MAC address:
 
-``` yaml
-[bluetooth]#devices
-```
+  ``` yaml
+  [bluetooth]#devices
+ ```
 
   - Trust the controller:
 
-``` yaml
-[bluetooth]#trust device_mac_address
-```
+  ``` yaml
+ [bluetooth]#trust device_mac_address
+  ```
 
   - Disconnect the USB cable from the controller. The controller should be paired and displayed in `bluetoothctl`. If the controller does not appear in `bluetoothctl`, press the PS button. When paired, you should see a device connected to the Bluetooth of the PC.
 
   - To exit `bluetoothctl`, enter `quit`.
 
-``` yaml
-[bluetooth]#quit
-```
+  ``` yaml
+  [bluetooth]#quit
+  ```
 
   - To turn off the controller, press and hold the PS button for 10-12 seconds.
   - Press the PS button to use the controller again. It should turn on and automatically pair over the Bluetooth.
@@ -250,9 +250,9 @@ bluetoothctl
 
   - Check that the controller has been registered as a joystick
 
-``` bash
-ls /dev/input/js*
-```
+  ``` bash
+  ls /dev/input/js*
+  ```
 
   - You can test the controls with `jstest` or `jstest-gtk`.
 
@@ -260,17 +260,17 @@ ls /dev/input/js*
 
   - Run the following two commands on separate terminals.
 
-``` bash
-roslaunch turtlebot_bringup minimal.launch
-```
+  ``` bash
+  roslaunch turtlebot_bringup minimal.launch
+  ```
 
-``` bash
-roslaunch turtlebot_teleop ps3_teleop.launch
-```
+  ``` bash
+  roslaunch turtlebot_teleop ps3_teleop.launch
+  ```
 
 #### Remove a PS controller from Bluetooth devices
 
-- Enter bluetoothctl and use remove command to remove the controller by its MAC address
+- In case you need to remove a paired controller, enter `bluetoothctl` and use `remove` command to remove the controller by its MAC address
 
 ``` bash
 $ bluetoothctl
