@@ -4,6 +4,15 @@ In this note, we setup the machines to operate the Turtlebot in ROS mutliple mac
 - The remote PC should have the same software installed as in the Turtlebot PC, particularly those packages that will be running on the remote PC.
 - We have access to the Ubuntu desktop during the setup.
 
+## Table of Content
+
+- [Auto Login Ubuntu](https://github.com/ailabspace/turtlebot2-noetic/blob/main/multiplemachines.md#auto-login-ubuntu)
+- [Read Out IP Address](https://github.com/ailabspace/turtlebot2-noetic/blob/main/multiplemachines.md#read-out-ip-address)
+- [Remote Access to Turtlebot](https://github.com/ailabspace/turtlebot2-noetic/blob/main/multiplemachines.md#remote-access-to-turtlebot)
+- [Simplify ROS Master Setup for ROS Multiple Machines](https://github.com/ailabspace/turtlebot2-noetic/blob/main/multiplemachines.md#simplify-ros-master-setup-for-ros-multiple-machines)
+- [Some Notes on Using ROS with Multiple Machines](https://github.com/ailabspace/turtlebot2-noetic/blob/main/multiplemachines.md#some-notes-on-using-ros-with-multiple-machines)
+- [Automate Robot Launch](https://github.com/ailabspace/turtlebot2-noetic/blob/main/multiplemachines.md#automate-robot-ros-launch-in-progress)
+
 ## Auto Login Ubuntu
 
 - Enable auto login for the user on the Turtlebot machine
