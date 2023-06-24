@@ -5,6 +5,22 @@ Perhaps the easiest and yet fun thing to do with a mobile robot is to be able to
 - Another conveniently available controllers are the game joysticks, e.g. the Sony Playstation DualShock controllers.
 - Here we setup for keyboard, PS3 and PS4 controllers.
 
+## Table of Content
+
+- [Teleop with Keyboard](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#teleop-with-keyboard)
+  - [Telepresence](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#telepresence)
+  - [Mapping](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#mapping)
+- [Teleop with Joystick](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#teleop-with-joystick)
+  - [Setting up joystick](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#setting-up-joystick)
+    - [Install generic joystick driver](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#generic-joystick-driver)
+    - [Install joystick test program](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#install-joystick-test-program)
+    - [Set up PS3 or PS4 controller with USB cable](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#set-up-ps3-or-ps4-controller-with-usb-cable)
+    - [Set up PS3 or PS4 controller over Bluetooth (wireless)](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#set-up-ps3-or-ps4-controller-over-bluetooth-wireless)
+    - [Remove a PS controller from Bluetooth devices](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#remove-a-ps-controller-from-bluetooth-devices)
+  - [Teleop Turtlebot with wireless controller](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#teleop-turtlebot-with-wireless-controller)
+  - [Some troubleshooting notes](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#some-troubleshooting-notes)
+- [References and Resources](https://github.com/ailabspace/turtlebot2-noetic/blob/main/teleop.md#references-and-resources)
+
 ## Teleop with Keyboard
 
 The robot can be conveniently operated if you have a wireless keyboard, or you work on a remote PC on ROS MM environment.
