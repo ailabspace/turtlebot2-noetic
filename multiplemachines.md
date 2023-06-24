@@ -4,7 +4,7 @@ In this note, we setup the machines to operate the Turtlebot in ROS mutliple mac
 - The remote PC should have the same software installed as in the Turtlebot PC, particularly those packages that will be running on the remote PC.
 - We have access to the Ubuntu desktop during the setup.
 
-## Auto Login
+## Auto Login Ubuntu
 
 - Enable auto login for the user on the Turtlebot machine
   - This will allow your Turtlebot to boot in and login to the user profile automatically. This would have been done if you enable it during installation of Ubuntu.
