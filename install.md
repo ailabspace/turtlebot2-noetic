@@ -1,5 +1,7 @@
 # Installation of initial Turtlebot2 software on ROS Noetic
 
+In this note, we setup the Turtlebot2 software on ROS Noetic from scratch, starting right from the bare-metal system. We install Ubuntu 20.04, ROS Noetic, setting up the devices and basic testing.
+
 - This note has been written when working on the Turtlebot PC (e.g. laptop, Intel NUC). The Turtlebot PC was tethered, i.e with monitor and keyboard/mouse attached. The movement of the robot was restricted during the testing.
 - If you plan to use ROS with multiple machines, you will need the same software system on both Turtlebot (local) PC and remote PC(s). Follow the steps below for both PCs unless specifically mentioned. You shall complete the Turtlebot PC first.
 
