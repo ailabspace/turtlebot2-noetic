@@ -296,8 +296,7 @@ Device 57:E1:BD:57:25:2B PLAYSTATION(R)3Controller-ghic
     - [install DsHidMini](https://vigem.org/projects/DsHidMini/How-to-Install/), a DualShock 3 controller driver specifically built for Windows 10 and 11
     - Plug in the PS3 controller.
     - Run the DsHidMini as Administrator
-
-![DsHidMini](img/dshidmini.png)
+      ![DsHidMini](img/dshidmini.png)
 
   - To install PS4 controller, you need to:
     - Ref: https://www.pcgamer.com/how-to-use-a-ps4-controller-on-pc/
@@ -307,12 +306,10 @@ Device 57:E1:BD:57:25:2B PLAYSTATION(R)3Controller-ghic
     - Plug controller or Bluetooth dongle in 
     - Download [DS4Windows](https://github.com/Ryochan7/DS4Windows/releases) and extract 
     - Run DS4Windows
-
-![DS4Windows](img/ds4windows.png)
+      ![DS4Windows](img/ds4windows.png)
 
   - You can test the controllers on [Gamepad Tester](https://gamepad-tester.com/). You need to press the PS button on the controller to pair it.
-
-![gamepad_tester](img/gamepad_tester.png)
+    ![gamepad_tester](img/gamepad_tester.png)
 
 - Notes on use of PS controllers, LEDs of PS3 controller and light of PS4 controller
 
