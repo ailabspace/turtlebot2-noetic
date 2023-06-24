@@ -1,6 +1,6 @@
 # Turtlebot2 software on ROS Noetic
 
-This repo contains notes on our process of setting up Turtlebot2 software on ROS Noetic from scratch. In most cases we have access to the desktop of Ubuntu 20.04, i.e. some GUIs have been used.
+This repo contains notes on our process of setting up Turtlebot2 software on ROS Noetic from scratch. It will continue to be updated. In most cases we have access to the desktop of Ubuntu 20.04, i.e. some GUIs have been used.
 
 - Tested on:
   - Ubuntu 20.04.6 LTS
