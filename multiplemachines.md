@@ -1,4 +1,4 @@
-# Setup Turtlebot to work headless and with ROS over multiple machines
+# Setup Turtlebot to Work Headless and in ROS Over Multiple Machines Setup
 
 In this note, we setup the machines to operate the Turtlebot in ROS mutliple machines environment.
 - The remote PC should have the same software installed as in the Turtlebot PC, particularly those packages that will be running on the remote PC.
