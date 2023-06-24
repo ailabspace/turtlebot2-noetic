@@ -257,19 +257,6 @@ This shall be set up on the machine where the joystick will be connected.
 
   - You can test the controls with `jstest` or `jstest-gtk`.
 
-- Teleop Turtlebot with wireless controller
-
-  - Run the following two commands on separate terminals.
-    - In the case of ROS MM environment, the turlebot_bringup should be executed on the machine where the Kobuki will be connected, i.e. the Turtlebot. The ps3_teleop.launch should be executed on the machine where the joystick will be connected.
-
-  ``` bash
-  roslaunch turtlebot_bringup minimal.launch
-  ```
-
-  ``` bash
-  roslaunch turtlebot_teleop ps3_teleop.launch
-  ```
-
 #### Remove a PS controller from Bluetooth devices
 
 - In case you need to remove a paired controller, enter `bluetoothctl` and use `remove` command to remove the controller by its MAC address
@@ -289,7 +276,20 @@ Device 57:E1:BD:57:25:2B PLAYSTATION(R)3Controller-ghic
 [bluetooth]# quit
 ```
 
-#### Some troubleshooting notes
+### Teleop Turtlebot with wireless controller
+
+  - Run the following two commands on separate terminals.
+    - In the case of ROS MM environment, the turlebot_bringup should be executed on the machine where the Kobuki will be connected, i.e. the Turtlebot. The ps3_teleop.launch should be executed on the machine where the joystick will be connected.
+
+  ``` bash
+  roslaunch turtlebot_bringup minimal.launch
+  ```
+
+  ``` bash
+  roslaunch turtlebot_teleop ps3_teleop.launch
+  ```
+
+### Some troubleshooting notes
 
 - If you are not a gamer, are not familiar with the PS controllers and do not have a Playstation to test your controller, you can test your controller on PC. 
 
