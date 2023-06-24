@@ -1,31 +1,31 @@
 # Teleop the Turtlebot2 with a Keyboard or Joystick
 
-Perhaps the easiest and yet fun thing to do with a mobile robot is to be able to tele-operate it. If you have set up ROS multimachine, you can teleop the mobile robot while viewing its camera giving you a basic telepresence.
-- The most conveniently available teleop controller is probably the PC keyboard. The keyboard may be attached (ideally wireless) to the Turtlebot PC, or a remote PC (in case of ROS multimachine setup).
+Perhaps the easiest and yet fun thing to do with a mobile robot is to be able to tele-operate it. If you have set up ROS multiple machine (ROS MM), you can teleop the mobile robot while viewing its camera giving you a basic telepresence.
+- The most conveniently available teleop controller is probably the PC keyboard. The keyboard may be attached (ideally wireless) to the Turtlebot PC, or a remote PC (in case of ROS MM environment).
 - Another conveniently available controllers are the game joysticks, e.g. the Sony Playstation DualShock controllers.
 - Here we setup for keyboard, PS3 and PS4 controllers.
 
 ## Teleop with Keyboard
 
-The robot can be conveniently operated if you have a wireless keyboard, or you work on a remote PC on ROS multimachines environment.
+The robot can be conveniently operated if you have a wireless keyboard, or you work on a remote PC on ROS MM environment.
 
-- In the case of ROS multimachines environment, nodes that access a specific hardware (e.g. Kobuki, Astra camera, keyboard) should be running on the PC where the hardware is attached to. 
+- In the case of ROS MM environment, nodes that access a specific hardware (e.g. Kobuki, Astra camera, keyboard) should be running on the PC where the hardware is attached to. 
 
 ### Telepresence
 
 - Run each command in a new terminal
 
-  - Bringup (in case of ROS multimachines environment, run on the PC where the Kobuki is attached, i.e. the Turtlebot2)
+  - Bringup (in case of ROS MM environment, run on the PC where the Kobuki is attached, i.e. the Turtlebot2)
   ``` bash
   roslaunch turtlebot_bringup minimal.launch
   ```
 
-  - Use `rqt_image_view` to select the image topic to view
+  - Use `rqt_image_view` to select the image topic to view (in case of ROS MM environment, this can run on any PC, usually on the remote PC where the display is available)
   ``` bash
   rosrun rqt_image_view rqt_image_view
   ```
 
-  - Teleop (in case of ROS multimachines environment, run on the PC where the keyboard is attached, e.g. the remote PC)
+  - Teleop (in case of ROS MM environment, run on the PC where the keyboard is attached, e.g. the remote PC)
   ``` bash
   roslaunch turtlebot_teleop keyboard_teleop.launch
   ```
@@ -34,22 +34,22 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
 
 - Run each command in a new terminal
 
-  - Bringup (in case of ROS multimachines environment, run on the PC where the Kobuki is attached, i.e. the Turtlebot2)
+  - Bringup (in case of ROS MM environment, run on the PC where the Kobuki is attached, i.e. the Turtlebot2)
   ``` bash
   roslaunch turtlebot_bringup minimal.launch
   ```
 
-  - Teleop (in case of ROS multimachines environment, run on the PC where the keyboard is attached, e.g. the remote PC)
+  - Teleop (in case of ROS MM environment, run on the PC where the keyboard is attached, e.g. the remote PC)
   ``` bash
   roslaunch turtlebot_teleop keyboard_teleop.launch
   ```
 
-  - SLAM (in case of ROS multimachines environment, run on the PC where the Astra camera is attached, i.e. the Turtlebot2; this launch file starts the Astra node)
+  - SLAM (in case of ROS MM environment, run on the PC where the Astra camera is attached, i.e. the Turtlebot2; this launch file starts the Astra node)
   ``` bash
   roslaunch turtlebot_navigation gmapping_demo.launch
   ```
 
-  - Visualization (in case of ROS multimachines environment, this can be run on a more powerful remote PC where you have a display)
+  - Visualization (in case of ROS MM environment, this can be run on any PC, usually on remote PC where you have a display and is a more powerful machine)
     - Use teleop to move the robot to see the SLAM in action
   ``` bash
   roslaunch turtlebot_rviz_launchers view_navigation.launch
@@ -60,6 +60,8 @@ The robot can be conveniently operated if you have a wireless keyboard, or you w
 ### Setting up joystick
 
 #### Generic joystick driver
+
+This shall be installed on the machine where the joystick will be connected.
 
 - Make sure that the ROS joystick driver is installed. You can check with `rospack list`. You should see the `joy` package.
 
@@ -86,7 +88,9 @@ sudo apt install ros-noetic-joy
   ```
 
 #### Install joystick test program.
-  
+
+This shall be installed on the machine where the joystick will be connected.
+
 - `jstest` (CLI version) or `jstest-gtk` (GUI version) allows us to read the state of the control switches on the controller and identify their enumbering (axis or button).
 
 ``` bash
@@ -94,6 +98,8 @@ sudo apt install jstest-gtk
 ```
 
 #### Set up PS3 or PS4 controller with USB cable
+
+This shall be setup on the machine where the joystick will be connected.
 
 - Plug in your PS3 (DS3) or PS4 (DS4) controller with usb cable, check that it is there
 
@@ -187,6 +193,8 @@ sudo chmod a+rw /dev/input/js0
 
 #### Set up PS3 or PS4 controller over Bluetooth (wireless)
 
+This shall be set up on the machine where the joystick will be connected.
+
 - Connect the PS3 or PS4 controller to Bluetooth
 
   - Disconnect the PS controller from USB.
@@ -252,6 +260,7 @@ sudo chmod a+rw /dev/input/js0
 - Teleop Turtlebot with wireless controller
 
   - Run the following two commands on separate terminals.
+    - In the case of ROS MM environment, the turlebot_bringup should be executed on the machine where the Kobuki will be connected, i.e. the Turtlebot. The ps3_teleop.launch should be executed on the machine where the joystick will be connected.
 
   ``` bash
   roslaunch turtlebot_bringup minimal.launch
