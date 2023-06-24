@@ -51,7 +51,8 @@ If the IP address of your Turtlebot is dynamic, it is convenient to know the IP 
 - Setup auto run the script on login
   - Keep the `readip.py` in your home folder.
   - Search for "Startup Applications" in your applications. Click "Add". Enter `python readip.py` in the "Command" field. Give this program a name and give a brief comment/description.
-    ![Add startup program](img/add_startup_program.png)
+
+  ![Add startup program](img/add_startup_program.png)
 
   - Reboot your system, you should hear the IP being read out.
   
