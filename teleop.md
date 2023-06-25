@@ -309,7 +309,7 @@ Device 57:E1:BD:57:25:2B PLAYSTATION(R)3Controller-ghic
 
 - If you are not a gamer, are not familiar with the PS controllers and do not have a Playstation to test your controller, you can test your controller on PC. 
 
-- A new PS controller may not turn ON (battery not charged) and may not charge with most USB chargers. The PS controllers are usually charged on the PS station. Withouat the PS station, you can use a PC to charge the PS controller. You will need to use a micro USB cable to connect the controller to the PC, have it paired and it should charge.
+- A new PS controller may not turn ON (battery not charged) and may not charge with most USB chargers. The PS controllers are usually charged on the PS station. Withouat the PS station, you can use a PC to charge the PS controller. You will need to use a USB cable to connect the controller to the PC, have it paired and it should charge. PS3 controller uses mini USB cable, PS4 controller uses micro USB cable.
 
 - The instructions above in setting up the controller for ROS have included steps to test the controller in Linux.
 
