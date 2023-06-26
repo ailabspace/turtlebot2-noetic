@@ -3,15 +3,15 @@
 This repo contains notes on our process of setting up Turtlebot2 software on ROS Noetic from scratch. It will continue to be updated. In most cases we have access to the desktop of Ubuntu 20.04, i.e. GUI has been used in some cases.
 
 - Tested on:
-  - Ubuntu 20.04.6 LTS
+  - Ubuntu 20.04.6 LTS, 64 bits
   - ROS 1 noetic
   - Python 3.8.10
   - pip 20.0.2
   - Robot:
-    - Compute: Intel NUC
+    - Compute: Intel NUC, Intel(R) Celeron(R) CPU J3455 @ 1.50GHz, 64 bits, 4GB RAM
     - Mobile base: Kobuki
     - 3D Sensor: Astra rgbd camera
-  - Remote PC: Lenovo Thinkpad X230, 4GB RAM
+  - Remote PC: Lenovo Thinkpad X230, Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz, 64 bits, 4GB RAM
 
 ## Table of Content
 
