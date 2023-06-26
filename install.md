@@ -388,10 +388,9 @@ roslaunch rqt_robot_steering
       ```
     - Run the action client to call the server to dock the Kobuki base
     - Once the Kobuki docked successfully, both the charging indicator LED of the robot will start blinking with green light. When fully charged, the charging indicator LED turns static green light, and the robot beeps briefly.
-
-``` bash
-roslaunch kobuki_auto_docking activate.launch --screen    
-```
+      ``` bash
+      roslaunch kobuki_auto_docking activate.launch --screen    
+      ```
 
 #### Test Astra camera
 
@@ -399,30 +398,29 @@ roslaunch kobuki_auto_docking activate.launch --screen
   - You can view the camera images
 
   - In a new terminal
-``` bash
-roslaunch astra_launch astra.launch
-```
+    ``` bash
+    roslaunch astra_launch astra.launch
+    ```
 
   - On a new terminal
     - You can move the robot with keyop while seeing the camera view
 
     - View RGB
-``` bash
-rosrun image_view image_view image:=/camera/rgb/image_raw
-```
+      ``` bash
+      rosrun image_view image_view image:=/camera/rgb/image_raw
+      ```
 
     - View depth
-``` bash
-rosrun image_view image_view image:=/camera/depth/image
-```
+      ``` bash
+      rosrun image_view image_view image:=/camera/depth/image
+      ```
 
     - alternatively, use `rqt_image_view` to conveniently select the image topic to view
+      ``` bash
+      rosrun rqt_image_view rqt_image_view
+      ```
 
-``` bash
-rosrun rqt_image_view rqt_image_view
-```
-
-![rqt_image_view](img/rqt_image_view.png)
+      ![rqt_image_view](img/rqt_image_view.png)
 
 #### Test with Turtlebot package and ROS Navigation stack
 
