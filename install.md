@@ -383,11 +383,9 @@ roslaunch rqt_robot_steering
   - Ensure the docking station is placed within the visibility of the robot without obstacles in between. The docking station should be placed against a wall to prevent it from moving when docking. Turn on the docking station. You should see the red light on the dock turned on.
   - Bringup the robot before running the commands below
     - Run the action server to wait for call from client to auto dock
-
-``` bash
-roslaunch kobuki_auto_docking minimal.launch --screen
-```
-
+      ``` bash
+      roslaunch kobuki_auto_docking minimal.launch --screen
+      ```
     - Run the action client to call the server to dock the Kobuki base
     - Once the Kobuki docked successfully, both the charging indicator LED of the robot will start blinking with green light. When fully charged, the charging indicator LED turns static green light, and the robot beeps briefly.
 
