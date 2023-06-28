@@ -63,15 +63,10 @@ sudo apt install -y libusb-dev libftdi-dev liborocos-kdl-dev
 ```
 
 ```bash
-sudo apt install -y ros-noetic-joy ros-noetic-laser-proc \
-  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
-  ros-noetic-rosserial-python ros-noetic-rosserial-client \
-  ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
-  ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-  ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
-  ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers \
-  ros-noetic-openni-description ros-noetic-openni-launch ros-noetic-openni2-launch \
-  ros-noetic-sophus ros-noetic-depthimage-to-laserscan ros-noetic-vision-opencv
+sudo apt install -y libusb-dev libftdi-dev liborocos-kdl-dev \
+  ros-noetic-sophus ros-noetic-joy ros-noetic-depthimage-to-laserscan \
+  ros-noetic-move-base ros-noetic-gmapping ros-noetic-navigation \
+  ros-noetic-openni-description ros-noetic-openni-launch ros-noetic-openni2-launch 
 ```
 
 ## 4. Install Dependent Python Packages
@@ -80,12 +75,6 @@ sudo apt install -y ros-noetic-joy ros-noetic-laser-proc \
 
 ```bash
 sudo apt install -y python-is-python3 python3-pip
-```
-
-- Do this if you are using virtual environment (not tested)
-
-```bash
-pip install numpy catkin_pkg empy pyem rospkg rospy defusedxml pyqt5
 ```
   
 ## 5. Download Catkin Sources
